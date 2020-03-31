@@ -1,0 +1,28 @@
+--- orig_config.plist	2020-03-31 17:55:18.000000000 -0400
++++ config.plist	2020-03-31 17:56:03.000000000 -0400
+@@ -565,6 +565,25 @@
+ 			<string>ApfsDriverLoader.efi</string>
+ 			<string>VBoxHfs.efi</string>
+ 		</array>
++		<key>Input</key>
++		<dict>
++			<key>KeyForgetThreshold</key>
++			<integer>5</integer>
++			<key>KeyMergeThreshold</key>
++			<integer>2</integer>
++			<key>KeySupport</key>
++			<true/>
++			<key>KeySupportMode</key>
++			<string>Auto</string>
++			<key>KeySwap</key>
++			<false/>
++			<key>PointerSupport</key>
++			<false/>
++			<key>PointerSupportMode</key>
++			<string></string>
++			<key>TimerResolution</key>
++			<integer>50000</integer>
++		</dict>
+ 		<key>Audio</key>
+ 		<dict>
+ 			<key>AudioCodec</key>

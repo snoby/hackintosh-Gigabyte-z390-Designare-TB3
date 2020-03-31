@@ -1,0 +1,28 @@
+--- output/EFI/OC/orig_config.plist	2020-03-31 12:18:44.000000000 -0400
++++ output/EFI/OC/config.plist	2020-03-31 12:20:25.000000000 -0400
+@@ -137,24 +137,7 @@
+ 	<key>Booter</key>
+ 	<dict>
+ 		<key>MmioWhitelist</key>
+-		<array>
+-			<dict>
+-				<key>Address</key>
+-				<integer>4275159040</integer>
+-				<key>Comment</key>
+-				<string>Haswell: SB_RCBA is a 0x4 page memory region, containing SPI_BASE at 0x3800 (SPI_BASE_ADDRESS)</string>
+-				<key>Enabled</key>
+-				<false/>
+-			</dict>
+-			<dict>
+-				<key>Address</key>
+-				<integer>4278190080</integer>
+-				<key>Comment</key>
+-				<string>Generic: PCI root is a 0x1000 page memory region used by some firmwares</string>
+-				<key>Enabled</key>
+-				<false/>
+-			</dict>
+-		</array>
++		<array/>
+ 		<key>Quirks</key>
+ 		<dict>
+ 			<key>AvoidRuntimeDefrag</key>
