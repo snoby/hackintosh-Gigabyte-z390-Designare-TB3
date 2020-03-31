@@ -1,0 +1,25 @@
+--- output/EFI/OC/orig_config.plist	2020-03-31 11:59:23.000000000 -0400
++++ output/EFI/OC/config.plist	2020-03-31 12:01:42.000000000 -0400
+@@ -533,17 +533,17 @@
+ 			<key>AdviseWindows</key>
+ 			<false/>
+ 			<key>MLB</key>
+-			<string>M000000000001</string>
++			<string>C027211024NJ0PGFB</string>
+ 			<key>ROM</key>
+-			<data>ESIzAAAA</data>
++			<data>tC6ZrFBr</data>
+ 			<key>SpoofVendor</key>
+ 			<true/>
+ 			<key>SystemProductName</key>
+-			<string>MacPro5,1</string>
++			<string>iMac18,3</string>
+ 			<key>SystemSerialNumber</key>
+-			<string>W0000000001</string>
++			<string>C02TRFYBJ1GJ</string>
+ 			<key>SystemUUID</key>
+-			<string>00000000-0000-0000-0000-000000000000</string>
++			<string>CC00F884-54BC-4A25-A725-A7DC4E1C3E40</string>
+ 		</dict>
+ 		<key>UpdateDataHub</key>
+ 		<true/>

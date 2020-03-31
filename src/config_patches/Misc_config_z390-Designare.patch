@@ -1,0 +1,111 @@
+--- output/EFI/OC/orig_config.plist	2020-03-31 11:13:31.000000000 -0400
++++ output/EFI/OC/config.plist	2020-03-31 11:16:23.000000000 -0400
+@@ -429,18 +429,18 @@
+ 		<dict>
+ 			<key>HibernateMode</key>
+ 			<string>None</string>
+-			<key>PickerMode</key>
+-			<string>Builtin</string>
+ 			<key>HideAuxiliary</key>
+-			<false/>
++			<true/>
+ 			<key>HideSelf</key>
+ 			<true/>
+ 			<key>PickerAttributes</key>
+ 			<integer>0</integer>
+ 			<key>PickerAudioAssist</key>
+ 			<false/>
++			<key>PickerMode</key>
++			<string>Builtin</string>
+ 			<key>PollAppleHotKeys</key>
+-			<false/>
++			<true/>
+ 			<key>ShowPicker</key>
+ 			<true/>
+ 			<key>TakeoffDelay</key>
+@@ -451,7 +451,7 @@
+ 		<key>Debug</key>
+ 		<dict>
+ 			<key>DisableWatchDog</key>
+-			<false/>
++			<true/>
+ 			<key>DisplayDelay</key>
+ 			<integer>0</integer>
+ 			<key>DisplayLevel</key>
+@@ -460,38 +460,23 @@
+ 			<integer>3</integer>
+ 		</dict>
+ 		<key>Entries</key>
+-		<array>
+-			<dict>
+-				<key>Arguments</key>
+-				<string></string>
+-				<key>Auxiliary</key>
+-				<false/>
+-				<key>Comment</key>
+-				<string>Not signed for security reasons</string>
+-				<key>Enabled</key>
+-				<false/>
+-				<key>Name</key>
+-				<string>CustomOS</string>
+-				<key>Path</key>
+-				<string>PciRoot(0x0)/Pci(0x1,0x1)/Pci(0x0,0x0)/NVMe(0x1,11-22-33-44-55-66-77-88)/HD(1,GPT,00000000-0000-0000-0000-000000000000,0x800,0x64000)/\EFI\BOOT\BOOTX64.EFI</string>
+-			</dict>
+-		</array>
++		<array/>
+ 		<key>Security</key>
+ 		<dict>
+ 			<key>AllowNvramReset</key>
+-			<false/>
++			<true/>
+ 			<key>AllowSetDefault</key>
+-			<false/>
++			<true/>
+ 			<key>AuthRestart</key>
+ 			<false/>
+ 			<key>ExposeSensitiveData</key>
+-			<integer>6</integer>
++			<integer>3</integer>
+ 			<key>HaltLevel</key>
+ 			<integer>2147483648</integer>
+ 			<key>Vault</key>
+-			<string>Secure</string>
++			<string>Optional</string>
+ 			<key>ScanPolicy</key>
+-			<integer>983299</integer>
++			<integer>0</integer>
+ 		</dict>
+ 		<key>Tools</key>
+ 		<array>
+@@ -501,27 +486,13 @@
+ 				<key>Auxiliary</key>
+ 				<false/>
+ 				<key>Comment</key>
+-				<string>Not signed for security reasons</string>
+-				<key>Enabled</key>
+-				<false/>
+-				<key>Name</key>
+-				<string>UEFI Shell</string>
+-				<key>Path</key>
+-				<string>Shell.efi</string>
+-			</dict>
+-			<dict>
+-				<key>Arguments</key>
+-				<string></string>
+-				<key>Auxiliary</key>
+-				<false/>
+-				<key>Comment</key>
+-				<string>Memory testing utility</string>
++				<string>Verify MSR 0xE2</string>
+ 				<key>Enabled</key>
+-				<false/>
++				<true/>
+ 				<key>Name</key>
+-				<string>memcheck</string>
++				<string>Verify MSR 0xE2</string>
+ 				<key>Path</key>
+-				<string>memcheck/memcheck.efi</string>
++				<string>VerifyMsrE2.efi</string>
+ 			</dict>
+ 		</array>
+ 	</dict>
