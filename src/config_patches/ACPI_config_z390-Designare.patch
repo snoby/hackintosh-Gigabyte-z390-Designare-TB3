@@ -1,0 +1,199 @@
+--- output/Docs/Sample.plist	2020-03-02 04:42:27.000000000 -0500
++++ output/EFI/OC/config.plist	2020-03-30 12:09:18.000000000 -0400
+@@ -2,41 +2,15 @@
+ <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+ <plist version="1.0">
+ <dict>
+-	<key>#WARNING - 1</key>
+-	<string>This is just a sample. Do NOT try loading it.</string>
+-	<key>#WARNING - 2</key>
+-	<string>Ensure you understand EVERY field before booting.</string>
+-	<key>#WARNING - 3</key>
+-	<string>In most cases recommended to use Sample.plist</string>
+-	<key>#WARNING - 4</key>
+-	<string>Use SampleFull.plist for end of life models: 2011 and older.</string>
+-	<key>#WARNING - 5</key>
+-	<string>https://docs.google.com/spreadsheets/d/1kGFz3_kp5xCDRRQpfnIUOvbiHXTmxEgyx97u73ImXXE/edit#gid=0</string>
+ 	<key>ACPI</key>
+ 	<dict>
+ 		<key>Add</key>
+ 		<array>
+ 			<dict>
+ 				<key>Comment</key>
+-				<string>My custom DSDT</string>
+-				<key>Enabled</key>
+-				<false/>
+-				<key>Path</key>
+-				<string>DSDT.aml</string>
+-			</dict>
+-			<dict>
+-				<key>Comment</key>
+-				<string>My custom SSDT</string>
+-				<key>Enabled</key>
+-				<false/>
+-				<key>Path</key>
+-				<string>SSDT-1.aml</string>
+-			</dict>
+-			<dict>
+-				<key>Comment</key>
+-				<string>plugin-type=1</string>
++				<string></string>
+ 				<key>Enabled</key>
+-				<false/>
++				<true/>
+ 				<key>Path</key>
+ 				<string>SSDT-PLUG.aml</string>
+ 			</dict>
+@@ -44,23 +18,15 @@
+ 				<key>Comment</key>
+ 				<string></string>
+ 				<key>Enabled</key>
+-				<false/>
+-				<key>Path</key>
+-				<string>SSDT-SBUS-MCHC.aml</string>
+-			</dict>
+-			<dict>
+-				<key>Comment</key>
+-				<string>Notebook brightness</string>
+-				<key>Enabled</key>
+-				<false/>
++				<true/>
+ 				<key>Path</key>
+-				<string>SSDT-PNLF.aml</string>
++				<string>SSDT-DESIGNARE-Z390-NO-CNVW.aml</string>
+ 			</dict>
+ 			<dict>
+ 				<key>Comment</key>
+ 				<string></string>
+ 				<key>Enabled</key>
+-				<false/>
++				<true/>
+ 				<key>Path</key>
+ 				<string>SSDT-EC.aml</string>
+ 			</dict>
+@@ -68,49 +34,33 @@
+ 				<key>Comment</key>
+ 				<string></string>
+ 				<key>Enabled</key>
+-				<false/>
+-				<key>Path</key>
+-				<string>SSDT-EC-USBX.aml</string>
+-			</dict>
+-			<dict>
+-				<key>Comment</key>
+-				<string></string>
+-				<key>Enabled</key>
+-				<false/>
+-				<key>Path</key>
+-				<string>SSDT-EHCx_OFF.aml</string>
+-			</dict>
+-			<dict>
+-				<key>Comment</key>
+-				<string></string>
+-				<key>Enabled</key>
+-				<false/>
++				<true/>
+ 				<key>Path</key>
+-				<string>SSDT-AWAC.aml</string>
++				<string>SSDT-NVRAM.aml</string>
+ 			</dict>
+ 			<dict>
+ 				<key>Comment</key>
+ 				<string></string>
+ 				<key>Enabled</key>
+-				<false/>
++				<true/>
+ 				<key>Path</key>
+-				<string>SSDT-RTC0.aml</string>
++				<string>SSDT-DTPG.aml</string>
+ 			</dict>
+ 			<dict>
+ 				<key>Comment</key>
+ 				<string></string>
+ 				<key>Enabled</key>
+-				<false/>
++				<true/>
+ 				<key>Path</key>
+-				<string>SSDT-ALS0.aml</string>
++				<string>SSDT-UIAC-DESIGNARE-Z390-V7.aml</string>
+ 			</dict>
+ 			<dict>
+ 				<key>Comment</key>
+ 				<string></string>
+ 				<key>Enabled</key>
+-				<false/>
++				<true/>
+ 				<key>Path</key>
+-				<string>SSDT-PMC.aml</string>
++				<string>SSDT-Z390-DESIGNARE-TB3HP-V4.aml</string>
+ 			</dict>
+ 		</array>
+ 		<key>Block</key>
+@@ -148,13 +98,13 @@
+ 		<array>
+ 			<dict>
+ 				<key>Comment</key>
+-				<string>_Q11 to XQ11</string>
++				<string>SAT0 to SATA</string>
+ 				<key>Count</key>
+-				<integer>1</integer>
++				<integer>0</integer>
+ 				<key>Enabled</key>
+-				<false/>
++				<true/>
+ 				<key>Find</key>
+-				<data>X1ExMQ==</data>
++				<data>U0FUMA==</data>
+ 				<key>Limit</key>
+ 				<integer>0</integer>
+ 				<key>Mask</key>
+@@ -162,7 +112,7 @@
+ 				<key>OemTableId</key>
+ 				<data></data>
+ 				<key>Replace</key>
+-				<data>WFExMQ==</data>
++				<data>U0FUQQ==</data>
+ 				<key>ReplaceMask</key>
+ 				<data></data>
+ 				<key>Skip</key>
+@@ -170,17 +120,17 @@
+ 				<key>TableLength</key>
+ 				<integer>0</integer>
+ 				<key>TableSignature</key>
+-				<data></data>
++				<data>RFNEVA==</data>
+ 			</dict>
+ 			<dict>
+ 				<key>Comment</key>
+-				<string>_Q12 to XQ12</string>
++				<string>SAT0 to SATA</string>
+ 				<key>Count</key>
+-				<integer>1</integer>
++				<integer>0</integer>
+ 				<key>Enabled</key>
+-				<false/>
++				<true/>
+ 				<key>Find</key>
+-				<data>X1ExMg==</data>
++				<data>U0FUMA==</data>
+ 				<key>Limit</key>
+ 				<integer>0</integer>
+ 				<key>Mask</key>
+@@ -188,7 +138,7 @@
+ 				<key>OemTableId</key>
+ 				<data></data>
+ 				<key>Replace</key>
+-				<data>WFExMg==</data>
++				<data>U0FUQQ==</data>
+ 				<key>ReplaceMask</key>
+ 				<data></data>
+ 				<key>Skip</key>
+@@ -196,7 +146,7 @@
+ 				<key>TableLength</key>
+ 				<integer>0</integer>
+ 				<key>TableSignature</key>
+-				<data></data>
++				<data>U1NEVA==</data>
+ 			</dict>
+ 		</array>
+ 		<key>Quirks</key>

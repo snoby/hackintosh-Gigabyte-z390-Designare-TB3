@@ -1,0 +1,31 @@
+--- output/EFI/OC/orig_config.plist	2020-03-31 09:15:26.000000000 -0400
++++ output/EFI/OC/config.plist	2020-03-31 09:16:37.000000000 -0400
+@@ -220,23 +220,13 @@
+ 	<dict>
+ 		<key>Add</key>
+ 		<dict>
+-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
++			<key>PciRoot(0x0)/Pci(0x1c,0x1)/Pci(0x0,0x0)</key>
+ 			<dict>
+-				<key>layout-id</key>
+-				<data>AQAAAA==</data>
++				<key>device_type</key>
++				<string>Ethernet Controller</string>
++				<key>model</key>
++				<string>Intel i211 PCI Express Gigabit Ethernet</string>
+ 			</dict>
+-			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+-			<dict>
+-				<key>AAPL,ig-platform-id</key>
+-				<data></data>
+-			</dict>
+-		</dict>
+-		<key>Block</key>
+-		<dict>
+-			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
+-			<array>
+-				<string>MaximumBootBeepVolume</string>
+-			</array>
+ 		</dict>
+ 	</dict>
+ 	<key>Kernel</key>
