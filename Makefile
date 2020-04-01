@@ -22,21 +22,23 @@ board_reference_files:
 
 $(CONFIG_PLIST): decompress
 
-patches: $(CONFIG_PLIST)
-	@echo "Applying patches"
-	patch $(CONFIG_PLIST) < $(PATCH_DIR)/ACPI_config_z390-Designare.patch
-	patch $(CONFIG_PLIST) < $(PATCH_DIR)/booter_config_z390-Designare.patch
-	patch $(CONFIG_PLIST) < $(PATCH_DIR)/DeviceProperties_config_z390-Designare.patch
-	patch $(CONFIG_PLIST) < $(PATCH_DIR)/Kernel_config_z390-Designare.patch
-	patch $(CONFIG_PLIST) < $(PATCH_DIR)/Misc_config_z390-Designare.patch
-	patch $(CONFIG_PLIST) < $(PATCH_DIR)/NVRAM_config_z390-Designare.patch
-	patch $(CONFIG_PLIST) < $(PATCH_DIR)/PlatformInfo_config_z390-Designare.patch
-	patch $(CONFIG_PLIST) < $(PATCH_DIR)/UEFI_config_z390-Designare.patch
-	patch $(CONFIG_PLIST) < $(PATCH_DIR)/FixUP_config_z390-Designare.patch
-	patch $(CONFIG_PLIST) < $(PATCH_DIR)/UEFI_INPUT_config_z390-Designare.patch
-	patch $(CONFIG_PLIST) < $(PATCH_DIR)/ACPI_NO_BLOCK_config_z390-Designare.patch
-	patch $(CONFIG_PLIST) < $(PATCH_DIR)/UEFI_Move_config_z390-Designare.patch
-	rm -rf $(OUTPUT)/EFI/OC/config.plist.org
+#patches: $(CONFIG_PLIST)
+#	@echo "Applying patches"
+#	patch $(CONFIG_PLIST) < $(PATCH_DIR)/ACPI_config_z390-Designare.patch
+#	patch $(CONFIG_PLIST) < $(PATCH_DIR)/booter_config_z390-Designare.patch
+#	patch $(CONFIG_PLIST) < $(PATCH_DIR)/DeviceProperties_config_z390-Designare.patch
+#	patch $(CONFIG_PLIST) < $(PATCH_DIR)/Kernel_config_z390-Designare.patch
+#	patch $(CONFIG_PLIST) < $(PATCH_DIR)/Misc_config_z390-Designare.patch
+#	patch $(CONFIG_PLIST) < $(PATCH_DIR)/NVRAM_config_z390-Designare.patch
+#	patch $(CONFIG_PLIST) < $(PATCH_DIR)/PlatformInfo_config_z390-Designare.patch
+#	patch $(CONFIG_PLIST) < $(PATCH_DIR)/UEFI_config_z390-Designare.patch
+#	patch $(CONFIG_PLIST) < $(PATCH_DIR)/FixUP_config_z390-Designare.patch
+#	patch $(CONFIG_PLIST) < $(PATCH_DIR)/UEFI_INPUT_config_z390-Designare.patch
+#	patch $(CONFIG_PLIST) < $(PATCH_DIR)/ACPI_NO_BLOCK_config_z390-Designare.patch
+#	patch $(CONFIG_PLIST) < $(PATCH_DIR)/UEFI_Move_config_z390-Designare.patch
+#	rm -rf $(OUTPUT)/EFI/OC/config.plist.org
+patches:$(CONFIG_PLIST)
+	cp -rf src/config.plist $(CONFIG_PLIST)
 
 
 drivers:
